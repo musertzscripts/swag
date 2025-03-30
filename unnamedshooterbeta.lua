@@ -22,7 +22,7 @@ local Window = Rayfield:CreateWindow({
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = false, -- Set this to true to use our key system
+   KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
       Title = "swag hub",
       Subtitle = "key system",
@@ -39,12 +39,12 @@ local MainTab = Window:CreateTab("Combat", 4483362458) -- Title, Image
 local Button = MainTab:CreateButton({
    Name = "Aimbot",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-Script/refs/heads/main/Aimbot%20Script%20(Without%20FOV).lua"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/musertzscripts/dioqjefoiwejf/refs/heads/main/aimlock.lua"))()
    end,
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Auto-Shoot [BETA]",
+   Name = "Auto-Shoot [PC ONLY/MOBILE COMING SOON!]",
    Callback = function()
    loadstring(game:HttpGet("https://github.com/musertzscripts/dioqjefoiwejf/blob/main/beta.lua"))()
    end,
@@ -54,5 +54,21 @@ local Button = MainTab:CreateButton({
    Name = "ESP Player",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/musertzscripts/dioqjefoiwejf/refs/heads/main/huhik.lua"))()
+   end,
+})
+
+local OtherTab = Window:CreateTab("Others", 4483362458) -- Title, Image
+
+local Button = OtherTab:CreateButton({
+   Name = "Noclip",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/BombLoL/Noclip/refs/heads/main/noclip.lua"))()
+   end,
+})
+
+local Button = OtherTab:CreateButton({
+   Name = "Infintie Yield",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
 })
