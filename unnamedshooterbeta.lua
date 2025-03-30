@@ -36,21 +36,21 @@ local Window = Rayfield:CreateWindow({
 
 local MainTab = Window:CreateTab("Combat", 4483362458) -- Title, Image
 
-local Button = Tab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Aimbot",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-Script/refs/heads/main/Aimbot%20Script%20(Without%20FOV).lua"))()
    end,
 })
 
-local Button = Tab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Auto-Shoot [BETA]",
    Callback = function()
    loadstring(game:HttpGet("https://github.com/musertzscripts/dioqjefoiwejf/blob/main/beta.lua"))()
    end,
 })
 
-local Button = Tab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "ESP Player",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/musertzscripts/dioqjefoiwejf/refs/heads/main/huhik.lua"))()
