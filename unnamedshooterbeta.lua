@@ -1,11 +1,11 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "swag hub",
+   Name = "swag hub | Unnamed Shooter",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "setting up ui..",
    LoadingSubtitle = "by kazumi (@Musertz)",
-   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
@@ -70,5 +70,14 @@ local Button = OtherTab:CreateButton({
    Name = "Infintie Yield",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+local PlayerTab = Window:CreateTab("Player", 4483362458) -- Title, Image
+
+local Button = PlayerTab:CreateButton({
+   Name = "Inf Health [MIGHT NOT WORK]",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/musertzscripts/dioqjefoiwejf/refs/heads/main/infhealth.lua"))()
    end,
 })
